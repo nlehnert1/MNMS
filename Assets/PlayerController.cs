@@ -31,48 +31,48 @@ public class PlayerController : MonoBehaviour
         //Go Up+Left
         if(vertAxis > 0 && horizAxis < 0)
         {
-            this.transform.Translate((Vector2.up + Vector2.left) * moveDist * Time.deltaTime);
+            this.transform.Translate(((Vector2.up * vertAxis) + (Vector2.left * -horizAxis)) * moveDist * Time.deltaTime);
         }
 
         //Go Up+Right
         else if(vertAxis > 0 && horizAxis > 0)
         {
-            this.transform.Translate((Vector2.up + Vector2.right) * moveDist * Time.deltaTime); 
+            this.transform.Translate(((Vector2.up * vertAxis) + (Vector2.right * horizAxis)) * moveDist * Time.deltaTime); 
         }
 
         //Go Down+Left
         else if(vertAxis < 0 && horizAxis < 0)
         {
-            this.transform.Translate((Vector2.down + Vector2.left) * moveDist * Time.deltaTime);
+            this.transform.Translate(((Vector2.down * -vertAxis) + (Vector2.left * -horizAxis)) * moveDist * Time.deltaTime);
         }
 
         //Go Down+Right
         else if (vertAxis < 0 && horizAxis > 0)
         {
-            this.transform.Translate((Vector2.down + Vector2.right) * moveDist * Time.deltaTime);
+            this.transform.Translate(((Vector2.down * -vertAxis) + (Vector2.right * horizAxis)) * moveDist * Time.deltaTime);
         }
         //Go Up
         else if(vertAxis > 0)
         {
-            this.transform.Translate(Vector2.up * moveDist * Time.deltaTime);
+            this.transform.Translate(((Vector2.up * vertAxis) * vertAxis) * moveDist * Time.deltaTime);
         }
 
         //Go Down
         else if(vertAxis < 0)
         {
-            this.transform.Translate(Vector2.down * moveDist * Time.deltaTime);
+            this.transform.Translate((Vector2.down * -vertAxis) * moveDist * Time.deltaTime);
         }
 
         //Go Left
         else if(horizAxis < 0)
         {
-            this.transform.Translate(Vector2.left * moveDist * Time.deltaTime);
+            this.transform.Translate((Vector2.left * -horizAxis) * moveDist * Time.deltaTime);
         }
 
         //Go Right
         else if(horizAxis > 0)
         {
-            this.transform.Translate(Vector2.right * moveDist * Time.deltaTime);
+            this.transform.Translate((Vector2.right * horizAxis) * moveDist * Time.deltaTime);
         }
     }
 }
