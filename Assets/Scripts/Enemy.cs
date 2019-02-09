@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     float visionRadius;
     float moveSpeed;
     bool following;
+    float radius;
 
     void Start()
     {
@@ -21,11 +22,32 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        
+        following = CanSeePlayer();
+        FollowPlayer(following);
     }
 
-    void CanSeePlayer()
+    public bool CanSeePlayer()
     {
+        playerPosition = player.transform.position;
+        enemyPosition = this.transform.position;
 
+        radius = Mathf.Sqrt(Mathf.Pow(playerPosition.x - enemyPosition.x, 2) + Mathf.Pow(playerPosition.y - enemyPosition.y, 2));
+        if(radius <= visionRadius)
+        {
+            following = true;
+        }
+        else
+        {
+            following = false;
+        }
+        return following;
+    }
+
+    public void FollowPlayer (bool following)
+    {
+        if(following)
+        {
+            this.transform.Translate((player.transform.position - transform.position).normalized * moveSpeed * Time.deltaTime);
+        }
     }
 }
