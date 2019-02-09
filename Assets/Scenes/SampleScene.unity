@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 20422939}
   - component: {fileID: 20422941}
   - component: {fileID: 20422940}
+  - component: {fileID: 20422942}
   m_Layer: 0
   m_Name: TMAP4
   m_TagString: Untagged
@@ -5730,6 +5731,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< HEAD
 --- !u!1 &232484030
 GameObject:
   m_ObjectHideFlags: 0
@@ -5762,11 +5764,15 @@ Transform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &232484032
+=======
+--- !u!61 &20422942
+>>>>>>> Environment-Dev
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 232484030}
   m_Enabled: 1
   m_Density: 1
@@ -5775,6 +5781,16 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
+=======
+  m_GameObject: {fileID: 20422938}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -13.481766, y: 40.49398}
+>>>>>>> Environment-Dev
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5785,7 +5801,11 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Size: {x: 1, y: 1}
+=======
+  m_Size: {x: 3.0334654, y: 19.01204}
+>>>>>>> Environment-Dev
   m_EdgeRadius: 0
 --- !u!1 &257265671
 GameObject:
