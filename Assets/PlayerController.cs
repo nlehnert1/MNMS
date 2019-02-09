@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moveDist = 2.0f;
+        moveDist = 5.0f;
         sprint = false;
     }
 
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            moveDist = 2.0f;
+            moveDist = 5.0f;
         }
         //Go Up+Left
         if (vertAxis > 0 && horizAxis < 0)
