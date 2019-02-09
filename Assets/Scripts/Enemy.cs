@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MovingObject
-{
+{/*
 
     public int playerDamage;
 
@@ -53,5 +53,5 @@ public class Enemy : MovingObject
             xDir = target.position.x > Transform.position.x ? 1 : -1;
 
         AttemptMove<UnityEditor.Build.Player>(xDir, yDir);
-    }
+    }*/
 }
