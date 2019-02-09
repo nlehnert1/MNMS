@@ -61,7 +61,7 @@ public class Enemy : MonoBehaviour
     public int AttackPlayer ()
     {
         //If close enough to player (OR UPON COLLISION WITH PLAYER), deals damage to player.
-        //TODO: implement one or the other
+        //TODO: implement one or the other. Probably upon collision, because ideally player would attack and kill enemy if the enemy is only close to the player
         return 0;
     }
 
