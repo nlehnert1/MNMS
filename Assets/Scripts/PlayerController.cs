@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
 
     bool sprint;
 
+
     // Start is called before the first frame update
     void Start()
     {
