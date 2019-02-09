@@ -3,55 +3,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MovingObject
-{/*
+public class Enemy : MonoBehaviour
+{
+    GameObject player;
+    Vector2 playerPosition;
+    Vector2 enemyPosition;
+    float visionRadius;
+    float moveSpeed;
+    bool following;
 
-    public int playerDamage;
-
-    private Animator animator;
-    private Transform target;
-    private bool skipMove;
-
-
-    // Start is called before the first frame update
-    protected override void Start()
+    void Start()
     {
-        animator = GetComponent<Animator>();
-        target = GameObject.FindGameObjectsWithTag("Player").transform;
-        base.Start();
+        player = GameObject.Find("characterMainFinal");
+        visionRadius = 1000.0f;
+        moveSpeed = 100.00f;
     }
 
-    private T GetComponent<T>()
+    void Update()
     {
-        throw new NotImplementedException();
+        
     }
 
-    // Update is called once per frame
-    protected override void AttemptMove<T>(int xDir, int yDir)
+    void CanSeePlayer()
     {
-        if (skipMove)
-        {
-            skipMove = false;
-            return;
-        }
 
-        base.AttemptMove<T>(xDir, yDir);
-
-        skipMove = true;
     }
-
-    public void MoveEnemy()
-    {
-        int xDir = 0;
-        int yDir = 0;
-
-        if (Mathf.Abs(target.position.x - Transform.position.x) < float.Epsilon)
-        {
-            yDir = target.position.y > Transform.position.y ? 1 : -1;
-        }
-        else
-            xDir = target.position.x > Transform.position.x ? 1 : -1;
-
-        AttemptMove<UnityEditor.Build.Player>(xDir, yDir);
-    }*/
 }
