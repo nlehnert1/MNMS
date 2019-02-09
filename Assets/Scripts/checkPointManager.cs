@@ -17,9 +17,5 @@ public class checkPointManager : MonoBehaviour
         
     }
 
-	void onTriggerEnter(Collider other){
-		if(other.gameObject.tag == "CheckPoint"){
-			currentCPoint = other.gameObject;
-		}
-	}
+
 }
