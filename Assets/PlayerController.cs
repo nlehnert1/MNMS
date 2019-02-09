@@ -10,26 +10,40 @@ public class PlayerController : MonoBehaviour
 
     float moveDist;
 
+    bool sprint;
+
     // Start is called before the first frame update
     void Start()
     {
         moveDist = 2.0f;
+        sprint = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        sprint = Input.GetButton("XboxX");
         Translate();
         vertAxis = Input.GetAxisRaw("Vertical");
         horizAxis = Input.GetAxisRaw("Horizontal");
+ 
+        
         
     }
 
     void Translate()
     {
         //TODO
+        if (sprint)
+        {
+            moveDist = 20.0f;
+        }
+        else
+        {
+            moveDist = 2.0f;
+        }
         //Go Up+Left
-        if(vertAxis > 0 && horizAxis < 0)
+        if (vertAxis > 0 && horizAxis < 0)
         {
             this.transform.Translate(((Vector2.up * vertAxis) + (Vector2.left * -horizAxis)) * moveDist * Time.deltaTime);
         }
