@@ -21,6 +21,7 @@ public class Enemy : MonoBehaviour
         visionRadius = 10.0f;
         moveSpeed = 5f;
         health = 100;
+
     }
 
     //Called once per frame. Calls function to set following, then calls FollowPlayer.
