@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         //TODO
         if (sprint)
         {
-            moveDist = 20.0f;
+            moveDist = 10.0f;
         }
         else
         {

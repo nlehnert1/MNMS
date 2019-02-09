@@ -18,8 +18,8 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("characterMainFinal");
-        visionRadius = 1000.0f;
-        moveSpeed = 100.00f;
+        visionRadius = 10.0f;
+        moveSpeed = 5f;
         health = 100;
     }
 
