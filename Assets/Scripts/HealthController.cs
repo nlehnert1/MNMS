@@ -6,21 +6,19 @@ public class HealthController : MonoBehaviour
 {
     const int MAX_HEALTH = 100;
     int currentHealth;
+    private int numDeaths;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = MAX_HEALTH;
+        numDeaths = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if player gets hit
-        if(false) //condition
-        {
-
-        }
+        
     }
 
     void TakeDamage(int damage)
@@ -35,8 +33,17 @@ public class HealthController : MonoBehaviour
     void Die()
     {
         //Do things
-
+        numDeaths++;
         //Destroy object(?)
         Destroy(this.gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Dart")
+        {
+            TakeDamage(100);
+        }
+        
     }
 }
