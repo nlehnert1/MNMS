@@ -5919,7 +5919,7 @@ GameObject:
   - component: {fileID: 163732794}
   - component: {fileID: 163732793}
   m_Layer: 0
-  m_Name: CheckPoint10
+  m_Name: HalfWay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5948,9 +5948,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 163732791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 41f130d452a82ae47aaed6d8cfff8f24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isTouched: 0
+  checkPoints: []
 --- !u!61 &163732794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6198,7 +6200,7 @@ GameObject:
   - component: {fileID: 250485694}
   m_Layer: 0
   m_Name: CheckPoint2
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6229,6 +6231,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 0
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &250485695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18466,7 +18471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485020195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -369.08, y: -161.16, z: 0}
+  m_LocalPosition: {x: -373.3, y: -161.4, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1481209307}
@@ -18635,6 +18640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCPoint: {fileID: 0}
+  checkPointCounter: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -24949,74 +24955,6 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
---- !u!114 &827775830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 2071416434}
-  m_Color: {r: 0.8047826, g: 0.46626332, b: 0.5501937, a: 1}
-  m_Transform:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
-  m_InstancedGameObject: {fileID: 0}
-  m_Flags: 3
-  m_ColliderType: 1
---- !u!114 &908369286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1166829800}
-  m_Color: {r: 0.8344026, g: 0.54105604, b: 0.5639929, a: 1}
-  m_Transform:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: 1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
-  m_InstancedGameObject: {fileID: 0}
-  m_Flags: 3
-  m_ColliderType: 1
 --- !u!1 &922489547
 GameObject:
   m_ObjectHideFlags: 0
@@ -25030,7 +24968,7 @@ GameObject:
   - component: {fileID: 922489549}
   m_Layer: 0
   m_Name: CheckPoint4
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25061,6 +24999,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 0
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &922489550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36890,7 +36831,7 @@ GameObject:
   - component: {fileID: 1119100429}
   m_Layer: 0
   m_Name: CheckPoint5
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36921,6 +36862,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 0
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &1119100430
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -36960,7 +36904,7 @@ GameObject:
   - component: {fileID: 1164102965}
   m_Layer: 0
   m_Name: CheckPoint9
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36991,6 +36935,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 0
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &1164102966
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -37017,214 +36964,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1}
   m_EdgeRadius: 0
---- !u!213 &1166829800
-Sprite:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 4
-    height: 4
-  m_Offset: {x: 0, y: 0}
-  m_Border: {x: 0, y: 0, z: 0, w: 0}
-  m_PixelsToUnits: 4
-  m_Pivot: {x: 0.5, y: 0.5}
-  m_Extrude: 0
-  m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
-  m_RenderDataKey:
-    00000000000000000000000000000000: 0
-  m_AtlasTags: []
-  m_SpriteAtlas: {fileID: 0}
-  m_RD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 2
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_AtlasRD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 2
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_PhysicsShape: []
-  m_Bones: []
-  m_SpriteID: 
 --- !u!1 &1288134953
 GameObject:
   m_ObjectHideFlags: 0
@@ -37512,7 +37251,7 @@ GameObject:
   - component: {fileID: 1311710908}
   m_Layer: 0
   m_Name: CheckPoint7
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37543,6 +37282,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 0
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &1311710909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48874,7 +48616,7 @@ GameObject:
   - component: {fileID: 1393762745}
   m_Layer: 0
   m_Name: CheckPoint6
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48905,6 +48647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 0
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &1393762746
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54635,7 +54380,7 @@ GameObject:
   - component: {fileID: 1552572645}
   m_Layer: 0
   m_Name: CheckPoint1
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54648,7 +54393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552572643}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.66, z: 0}
+  m_LocalPosition: {x: 0.06, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 83455276}
@@ -54666,6 +54411,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 0
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &1552572646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -54705,7 +54453,7 @@ GameObject:
   - component: {fileID: 1611750753}
   m_Layer: 0
   m_Name: CheckPoint3
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54736,6 +54484,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 0
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &1611750754
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -55109,21 +54860,21 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 10, y: 130, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 2
+      m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 3
+      m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 11, y: 130, z: 0}
     second:
-      m_TileIndex: 1
-      m_TileSpriteIndex: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 2
+      m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 3
+      m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 12, y: 130, z: 0}
     second:
@@ -55136,12 +54887,12 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 13, y: 130, z: 0}
     second:
-      m_TileIndex: 0
-      m_TileSpriteIndex: 3
+      m_TileIndex: 14
+      m_TileSpriteIndex: 14
       m_TileMatrixIndex: 0
-      m_TileColorIndex: 5
+      m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 3
+      m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 14, y: 130, z: 0}
     second:
@@ -65954,10 +65705,10 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 827775830}
-  - m_RefCount: 2
-    m_Data: {fileID: 908369286}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 6
@@ -65966,7 +65717,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 7f177480b3511d647876998f7cca91a0, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 233
+  - m_RefCount: 235
     m_Data: {fileID: 11400000, guid: 801908267b6e9974d98ffcf12792c1ad, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 7f74261c3891b684389e7142c1019f7f, type: 2}
@@ -65982,7 +65733,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9c6bc65e29d59ea4ea8b1d96a9b5677e, type: 2}
   - m_RefCount: 96
     m_Data: {fileID: 11400000, guid: 2e0330281034e9849a3a5beea403143a, type: 2}
-  - m_RefCount: 566
+  - m_RefCount: 567
     m_Data: {fileID: 11400000, guid: 28332dac906d8e64aa27b2379b343ee9, type: 2}
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: f2bb0e51f5182aa419e26a4deccf4832, type: 2}
@@ -66011,15 +65762,15 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
-    m_Data: {fileID: 1166829800}
-  - m_RefCount: 1
-    m_Data: {fileID: 2071416434}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 6
     m_Data: {fileID: 21300056, guid: d4f21f3b5ab7a1d448eba1ab0d0a38af, type: 3}
   - m_RefCount: 6
     m_Data: {fileID: 21300024, guid: d4f21f3b5ab7a1d448eba1ab0d0a38af, type: 3}
-  - m_RefCount: 233
+  - m_RefCount: 235
     m_Data: {fileID: 21300044, guid: d4f21f3b5ab7a1d448eba1ab0d0a38af, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300062, guid: d4f21f3b5ab7a1d448eba1ab0d0a38af, type: 3}
@@ -66035,7 +65786,7 @@ Tilemap:
     m_Data: {fileID: 21300048, guid: d4f21f3b5ab7a1d448eba1ab0d0a38af, type: 3}
   - m_RefCount: 96
     m_Data: {fileID: 21300038, guid: d4f21f3b5ab7a1d448eba1ab0d0a38af, type: 3}
-  - m_RefCount: 566
+  - m_RefCount: 567
     m_Data: {fileID: 21300016, guid: d4f21f3b5ab7a1d448eba1ab0d0a38af, type: 3}
   - m_RefCount: 7
     m_Data: {fileID: 21300028, guid: d4f21f3b5ab7a1d448eba1ab0d0a38af, type: 3}
@@ -66079,18 +65830,18 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1227
+  - m_RefCount: 1230
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 1.8623e-41, g: 1.8623e-41, b: 1.8623e-41, a: 1.8623e-41}
-  - m_RefCount: 2
-    m_Data: {r: 0.8344026, g: 0.54105604, b: 0.5639929, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 1.5271e-41, g: 1.5271e-41, b: 1.5271e-41, a: 1.5271e-41}
   - m_RefCount: 0
     m_Data: {r: 1.8623e-41, g: 1.8623e-41, b: 1.8623e-41, a: 1.8623e-41}
   - m_RefCount: 0
     m_Data: {r: 1.8623e-41, g: 1.8623e-41, b: 1.8623e-41, a: 1.8623e-41}
-  - m_RefCount: 1
-    m_Data: {r: 0.8047826, g: 0.46626332, b: 0.5501937, a: 1}
+  - m_RefCount: 0
+    m_Data: {r: 1.5271e-41, g: 1.5271e-41, b: 1.5271e-41, a: 1.5271e-41}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -15, y: 0, z: 0}
@@ -66226,7 +65977,7 @@ GameObject:
   - component: {fileID: 1801316922}
   m_Layer: 0
   m_Name: CheckPoint0
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66239,7 +65990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801316920}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -8.19, z: 0}
+  m_LocalPosition: {x: 0, y: -8.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 83455276}
@@ -66257,6 +66008,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 1
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &1801316923
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -66283,214 +66037,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!213 &2071416434
-Sprite:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Rect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 4
-    height: 4
-  m_Offset: {x: 0, y: 0}
-  m_Border: {x: 0, y: 0, z: 0, w: 0}
-  m_PixelsToUnits: 4
-  m_Pivot: {x: 0.5, y: 0.5}
-  m_Extrude: 0
-  m_IsPolygon: 0
-  m_AtlasName: 
-  m_PackingTag: 
-  m_RenderDataKey:
-    00000000000000000000000000000000: 0
-  m_AtlasTags: []
-  m_SpriteAtlas: {fileID: 0}
-  m_RD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 2
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_AtlasRD:
-    serializedVersion: 3
-    texture: {fileID: 0}
-    alphaTexture: {fileID: 0}
-    m_SubMeshes:
-    - serializedVersion: 2
-      firstByte: 0
-      indexCount: 6
-      topology: 0
-      baseVertex: 0
-      firstVertex: 0
-      vertexCount: 4
-      localAABB:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-    m_IndexBuffer: 000001000200020001000300
-    m_VertexData:
-      serializedVersion: 2
-      m_VertexCount: 4
-      m_Channels:
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 3
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 1
-        offset: 0
-        format: 0
-        dimension: 2
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      - stream: 0
-        offset: 0
-        format: 0
-        dimension: 0
-      m_DataSize: 80
-      _typelessdata: 000000bf0000003f000000000000003f0000003f00000000000000bf000000bf000000000000003f000000bf00000000000000000000803f0000803f0000803f00000000000000000000803f00000000
-    m_Bindpose: []
-    textureRect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 4
-      height: 4
-    textureRectOffset: {x: 0, y: 0}
-    atlasRectOffset: {x: -1, y: -1}
-    settingsRaw: 64
-    uvTransform: {x: 4, y: 2, z: 4, w: 2}
-    downscaleMultiplier: 1
-  m_PhysicsShape: []
-  m_Bones: []
-  m_SpriteID: 
 --- !u!1 &2095092525
 GameObject:
   m_ObjectHideFlags: 0
@@ -66504,7 +66050,7 @@ GameObject:
   - component: {fileID: 2095092527}
   m_Layer: 0
   m_Name: CheckPoint8
-  m_TagString: Untagged
+  m_TagString: CheckPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -66535,6 +66081,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e91a608aeb7239347ad1522cd095e2a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasTouched: 0
+  goingBack: 0
+  mCamera: {fileID: 0}
 --- !u!61 &2095092528
 BoxCollider2D:
   m_ObjectHideFlags: 0
