@@ -17,14 +17,14 @@ public class DartMove : MonoBehaviour
     {
 		rb.velocity = gameObject.transform.up * speed;
     }
-	/*
-	private void OnCollisionEnter2D(Collider2D other){
+	
+	private void OnCollisionEnter2D(Collision2D other){
 		print("DART IS GONE");
-		//if(other.gameObject.tag == "Dart"){
-			//other.gameObject.Destroy;
+		if(other.gameObject.tag == "Dart"){
+            Destroy(other.gameObject);
 			Destroy (gameObject);
 		}
 	}
-	*/
+	
 }
 

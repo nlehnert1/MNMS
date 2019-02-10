@@ -83,4 +83,12 @@ public class Enemy : MonoBehaviour
         //Destroy instance of object
         Destroy(this.gameObject);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Dart")
+        {
+            Die();
+        }
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthController : MonoBehaviour
 {
-    const int MAX_HEALTH = 100;
+    const int MAX_HEALTH = 100000;
     int currentHealth;
     private int numDeaths;
 
@@ -44,6 +44,8 @@ public class HealthController : MonoBehaviour
         {
             TakeDamage(20);
         }
+        numDeaths++;
+       // this.transform.Translate()
         
     }
 }
