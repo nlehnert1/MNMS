@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealthController : MonoBehaviour
 {
-    const int MAX_HEALTH = 100000;
+    const int MAX_HEALTH = 100;
     int currentHealth;
     private int numDeaths;
 
