@@ -42,7 +42,7 @@ public class HealthController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Dart")
         {
-            TakeDamage(20);
+            gameObject.transform.position = gameObject.GetComponent<checkPointManager>().currentCPoint.transform.position;
         }
         numDeaths++;
        // this.transform.Translate()

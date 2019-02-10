@@ -37,8 +37,9 @@ public class HalfwayPoint : MonoBehaviour
                 }
 
             }
-            
 
+            GameObject texttime = GameObject.Find("Canvas2");
+            texttime.SetActive(true);
 
         }
 	}

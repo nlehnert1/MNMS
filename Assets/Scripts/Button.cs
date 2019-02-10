@@ -26,9 +26,10 @@ public class Button : MonoBehaviour
 				print("buttonPressed");
 				isPressed = true;
 				newMap.SetActive(true);
-				if(wall1 != null){
-					wall1.SetActive(false);
-				}
+
+				//if(wall1 != null){
+					wall1.SetActive(true);
+				//}
 				if(wall2 != null){
 					wall2.SetActive(false);
 				}
