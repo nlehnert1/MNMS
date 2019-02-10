@@ -42,7 +42,7 @@ public class HealthController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Dart")
         {
-            TakeDamage(100);
+            TakeDamage(20);
         }
         
     }

@@ -20015,6 +20015,7 @@ GameObject:
   - component: {fileID: 485020202}
   - component: {fileID: 485020203}
   - component: {fileID: 485020204}
+  - component: {fileID: 485020205}
   m_Layer: 0
   m_Name: characterMainFinal
   m_TagString: Player
@@ -20030,7 +20031,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485020195}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -434, y: -97, z: 0}
+  m_LocalPosition: {x: -431.5, y: -108.68, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1481209307}
@@ -20200,6 +20201,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentCPoint: {fileID: 0}
   checkPointCounter: 0
+--- !u!114 &485020205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485020195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b2f58d07e180b4da0d29bc03061afb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
