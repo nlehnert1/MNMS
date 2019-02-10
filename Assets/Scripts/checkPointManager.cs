@@ -6,6 +6,7 @@ public class checkPointManager : MonoBehaviour
 {
     // Start is called before the first frame update
 	public GameObject currentCPoint;
+	public int checkPointCounter;
     void Start()
     {
 		currentCPoint = GameObject.Find("CheckPoint0");
