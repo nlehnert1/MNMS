@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/EndScene1-victory.unity
     guid: e724ac0c12332c445ba000b603d70b9d
   - enabled: 1
+    path: Assets/Scenes/EndScene2-defeat.unity
+    guid: 2c16e26da18b09743975c3b6728f5303
+  - enabled: 1
     path: Assets/Scenes/CreditsScene1.unity
     guid: ba1fc13d8a1666f48909828e4e37778a
   - enabled: 1

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EscapeSequence : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class EscapeSequence : MonoBehaviour
 		if(escapeStart){
 			timeLeft = timestamp - Time.time;
 			timer.GetComponent<UnityEngine.UI.Text>().text = timeLeft.ToString("F2");
+            if(Time.time > timestamp)
+            {
+                SceneManager.LoadScene("EndScene2-defeat");
+            }
 		}
     }
 	private void OnTriggerEnter2D(Collider2D other){

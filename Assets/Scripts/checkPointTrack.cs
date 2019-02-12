@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class checkPointTrack : MonoBehaviour
 {
@@ -37,7 +38,10 @@ public class checkPointTrack : MonoBehaviour
 		}
 	}
 	private void OnTriggerStay2D(Collider2D other){
-		
+        if (goingBack && other.gameObject.GetComponent<checkPointManager>().currentCPoint == GameObject.Find("CheckPoint0"))
+        {
+            SceneManager.LoadScene("EndScene1-victory");
+        }
 		if(other.gameObject.tag == "Player"){
 			if(goingBack == false){
 				//move camera forward
